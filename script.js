@@ -42,7 +42,9 @@ function displayWeather(data) {
           data.list[i * 8].weather[0].icon
         }@2x.png" alt="${data.list[i * 8].weather[0].description}">
         <p>${data.list[i * 8].main.temp}°C</p>
-        <p>${data.list[i * 8].weather[0].description}</p>
+        <p><strong>Humidity:</strong> ${data.list[i].main.humidity}%</p>
+        <p><strong>Wind Speed:</strong> ${data.list[i].wind.speed}m/s</p>
+        <p><strong>Description:</strong> ${data.list[i].weather[0].description}</p>
       </div>
     `;
   }
