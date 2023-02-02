@@ -78,3 +78,4 @@ function displaySearches() {
 }
 
 displaySearches();
+Footer
